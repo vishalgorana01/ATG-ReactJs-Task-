@@ -166,7 +166,7 @@ function Navbar() {
                                         <img src={product} alt="icon here" className='h-6 w-6' />
                                     </li>
                                     <li className='flex items-center justify-center text-base gap-x-1.5 cursor-pointer'
-                                        onClick={() => setShowHide(!showHide)}>
+                                        onClick={() => setShowHide(true)}>
                                         <img src={menu} alt="icon here" className='h-6 w-6' />
                                     </li>
                                 </ul>
@@ -174,11 +174,11 @@ function Navbar() {
                         </span>
 
                         {/* on click on menu */}
-                        <span className={`fixed top-0 h-screen left-0 flex flex-col items-center justify-start py-6 gap-16 px-6 translate-x-full duration-300 bg-white w-screen ${showHide ? 'translate-x-0' : 'translate-x-full'}`}>
+                        <span className={`fixed top-0 h-screen left-0 flex flex-col items-center justify-start py-6 gap-16 px-6 duration-300 bg-white w-screen ${showHide ? 'translate-x-0' : 'translate-x-full'}`}>
                             <span className='flex items-center justify-between w-full max-w-7xl'>
                                 <img src={logoLetter} alt="loading error" className='h-10 w-10 cursor-pointer' />
                                 <img src={cross} alt="loading error" className='h-8 w-8 cursor-pointer'
-                                onClick={() => setShowHide(!showHide)} />
+                                onClick={() => setShowHide(false)} />
                             </span>
                             <span className='flex flex-col items-center justify-end w-full gap-y-10 max-w-md'>
                                 <span className='flex text-xl items-center justify-start gap-x-5 w-full'>
